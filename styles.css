@@ -1,0 +1,103 @@
+/**GENERELT**/
+body {
+  margin: 5%;
+}
+
+/**GENERELT**/
+
+h4 {
+  font-weight: 100;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10%;
+  gap: 8%;
+}
+
+.produkt_kort {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10%;
+  gap: 8%;
+}
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: grey;
+}
+
+.produktliste {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10%;
+  gap: 8%;
+}
+
+.price {
+  color: black;
+}
+
+button {
+  padding: 2%;
+}
+
+/**MOBIL**/
+@media screen and (max-width: 800px) {
+  .burger-icon {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu ul li {
+    margin: 15px 0;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .produkt_kort {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10%;
+    gap: 8%;
+  }
+
+  .produktliste {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10%;
+    gap: 2%;
+  }
+}
