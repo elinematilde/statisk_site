@@ -35,7 +35,7 @@ a:hover {
   color: grey;
 }
 
-.produktliste {
+.productList {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 10%;
@@ -94,7 +94,7 @@ button {
     gap: 8%;
   }
 
-  .produktliste {
+  .productList {
     display: grid;
     grid-template-columns: 1fr;
     margin: 10%;
