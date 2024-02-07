@@ -34,7 +34,7 @@ a {
 a:hover {
   color: grey;
 }
-
+/******* Produktliste  ********/
 .productList {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -47,7 +47,24 @@ a:hover {
 }
 
 button {
+  margin-top: 8%;
   padding: 2%;
+}
+
+/******* Produkt side ********/
+.purchaseBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10%;
+  gap: 8%;
+}
+
+/******* Kategori side ********/
+.categoryGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10%;
+  gap: 8%;
 }
 
 /**MOBIL**/

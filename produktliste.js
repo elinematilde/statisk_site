@@ -1,4 +1,7 @@
-fetch("https://kea-alt-del.dk/t7/api/products")
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("category");
+
+fetch("https://kea-alt-del.dk/t7/api/products?category=" + category)
   .then((res) => res.json())
   .then(showProducts);
 
@@ -8,7 +11,7 @@ function showProducts(products) {
 }
 
 function showProduct(product) {
-  //console.log(product);
+  console.log(product);
   //fang template
   const template = document.querySelector("#smallProductTemplate").content;
   //lav en kopi
@@ -19,8 +22,9 @@ function showProduct(product) {
     //produktet er udsolgt
     copy.querySelector("article").classList.add("soldOut");
   }
+  copy.querySelector(".read-more").setAttribute("href", `produkt.html?id=${product.id}`);
   //appende
-  document.querySelector("main").appendChild(copy);
+  document.querySelector(".productList").appendChild(copy);
 }
 /*
   <article class="smallProduct">
