@@ -3,9 +3,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  background-color: #e5e2e0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 45px;
+  background-color: #f1eeec;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
 }
 
 .menu {
@@ -39,14 +39,6 @@ header {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   transition: text-shadow 0.3s ease;
 }
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 800px) {
   .menu {

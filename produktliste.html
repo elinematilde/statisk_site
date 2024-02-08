@@ -12,13 +12,14 @@
 <body>
     <header>
         <div class="logo">
-            <a href="forside.html">Logo</a>
+            <a href="forside.html">
+                BasicApparel
+            </a>
         </div>
         <nav>
             <ul class="menu">
                 <li><a href="kategori.html">Kategori</a></li>
-                <li><a href="produktliste.html">Produktliste</a></li>
-                <li><a href="produkt.html">Produkt</a></li>
+
             </ul>
             <div class="burger">
                 <div class="line"></div>
@@ -28,28 +29,39 @@
         </nav>
     </header>
     <main>
-        <h1>Apparel</h1>
-        <section class="container_1"></section>
+        <section class="container_1">
+        </section>
     </main>
+
     <template id="smallProductTemplate">
         <article class="productList">
+
             <div class="img_cont">
-                <a href="produkt.html"><img src="" alt="Product Image" /></a>
+                <a class="read-more" href="produkt.html">
+                    <img src="img" alt="productImage" /></a>
             </div>
-            <a href="produkt.html">
-                <h2 class="produktnavn">Product Name</h2>
-            </a>
-            <p class="brand">Brand</p>
-            <p class="price"> <span>Price</span> DKK</p>
+
             <div class="soldout">
                 <p>UDSOLGT</p>
             </div>
             <div class="discount">
-                <p>-34%</p>
+                <p><span>-34%</span>%</p>
             </div>
-            <a class="read-more" href="produkt.html">Read more</a>
+
+            <a class="read-more" href="produkt.html">
+                <h2 class="produktnavn">Product Name</h2>
+            </a>
+
+
+            <h3 class="brand">Brand</h3>
+
+            <p class="price"> <span>Price</span> DKK</p>
+
+
+
         </article>
     </template>
+
     <script src="produktliste.js"></script>
 </body>
 

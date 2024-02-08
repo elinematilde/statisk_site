@@ -8,14 +8,14 @@ fetch("https://kea-alt-del.dk/t7/api/products/" + id)
 
 function showProduct(product) {
   console.log(product);
-  document.querySelector(".purchaseBox h3").textContent = product.productdisplayname;
-  document.querySelector(".purchaseBox .brand").textContent = product.brandname;
-  document.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+  document.querySelector(".purchaseBox .info_box h3").textContent = product.productdisplayname;
+  document.querySelector(".purchaseBox .info_box .brand").textContent = product.brandname;
+  document.querySelector(".img_container img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 }
 
 /*{ 
     "id": 1525,
-    "gender": "Unisex",
+    "gender": "Unisex", 
     "category": "Accessories",
     "subcategory": "Bags",
     "articletype": "Backpacks",
